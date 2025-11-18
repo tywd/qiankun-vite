@@ -1,0 +1,10 @@
+declare module '@/router' {
+  import type { Router } from 'vue-router'
+  const router: Router
+  export default router
+}
+
+declare module '@/micro' {
+  export function registerApps(): void
+  export function setupErrorHandler(): void
+}
