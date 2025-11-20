@@ -108,7 +108,6 @@ export const getSubApp = () => {
             container: '#micro-app-container', // 挂载容器
             activeRule: '/qiankun-vite-sub', // 激活路由
             props: {
-                routerBase: '/qiankun-vite-sub',
                 // setGlobalState,
                 mainAppInfo: {
                     name: '主应用的全局参数传给子应用'
