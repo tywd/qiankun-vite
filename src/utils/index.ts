@@ -98,7 +98,7 @@ export const getSubApp = () => {
     // 在生产环境中使用 Vercel 部署地址，开发环境中使用本地地址
     const isProd = process.env.NODE_ENV === 'production';
     const subAppEntry = isProd 
-        ? import.meta.env.VITE_SUB_APP_URL || 'https://qiankun-vite-sub.vercel.app' // 替换为实际的 Vercel 部署地址
+        ? process.env.VITE_SUB_APP_URL || 'https://qiankun-vite-sub.vercel.app' // 替换为实际的 Vercel 部署地址
         : 'http://localhost:8081';
 
     return [
@@ -108,6 +108,7 @@ export const getSubApp = () => {
             container: '#micro-app-container', // 挂载容器
             activeRule: '/sub-app', // 激活路由
             props: {
+                routerBase: '/sub-app',
                 // setGlobalState,
                 mainAppInfo: {
                     name: '主应用的全局参数传给子应用'
