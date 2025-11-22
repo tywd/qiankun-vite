@@ -8,7 +8,7 @@
     <div 
       id="micro-app-container" 
       ref="containerRef"
-      class="micro-app-content"
+      class="micro-app-container"
       key="micro-container"
       v-show="!loading"
     ></div>
@@ -77,19 +77,8 @@ onMounted(async () => {
 .sub-app-container {
   width: 100%;
 }
-.micro-app-container {
-  width: 100%;
-  flex: 1;
-  min-height: 600px;
-  position: relative;
-  /* 移除可能影响子应用的样式 */
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: transparent;
-}
 
-.micro-app-content {
+.micro-app-container {
   width: 100%;
   height: 100%;
   min-height: 600px;

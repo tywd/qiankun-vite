@@ -1,10 +1,5 @@
 <template>
   <el-aside :width="sidebarWidth" class="sidebar">
-    <!-- <div class="logo">
-      <img src="/logo.jpeg" alt="Logo" class="logo-img">
-      <span v-show="!menuStore.collapsed" class="logo-text">Qiankun</span>
-    </div> -->
-    
     <el-menu
       :default-active="menuStore.activeMenu"
       :collapse="menuStore.collapsed"

@@ -112,6 +112,7 @@ export const getSubApp = () => {
 
 为避免主应用与子应用之间的样式冲突，采用了以下策略：
 
-1. **CSS 命名空间**：为主应用的样式添加特定前缀
-2. **样式作用域**：使用 Vue 的 scoped CSS
-3. **Qiankun 沙箱**：利用 Qiankun 提供的样式隔离机制
+1. **CSS 命名空间**：为主应用的样式添加 `.main-app` 特定前缀
+2. **样式作用域**：使用 Vue 的 scoped CSS 和 CSS Modules
+3. **Qiankun 沙箱**：利用 Qiankun 提供的实验性样式隔离机制
+4. **详细方案**：请参考 [样式隔离方案](/main-app/style-isolation) 文档

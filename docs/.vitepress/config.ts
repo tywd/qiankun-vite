@@ -9,7 +9,8 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '主应用详解', link: '/main-app/' },
       { text: '子应用接入', link: '/sub-app/' },
-      { text: '部署指南', link: '/deployment/' }
+      { text: '部署指南', link: '/deployment/' },
+      { text: '常见问题', link: '/faq' }
     ],
     
     sidebar: {
@@ -20,7 +21,8 @@ export default defineConfig({
             { text: '架构概述', link: '/main-app/architecture' },
             { text: '路由配置', link: '/main-app/routing' },
             { text: '生命周期管理', link: '/main-app/lifecycle' },
-            { text: '应用间通信', link: '/main-app/communication' }
+            { text: '应用间通信', link: '/main-app/communication' },
+            { text: '样式隔离方案', link: '/main-app/style-isolation' }
           ]
         }
       ],
