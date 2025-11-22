@@ -22,7 +22,8 @@ export default defineConfig({
             { text: '路由配置', link: '/main-app/routing' },
             { text: '生命周期管理', link: '/main-app/lifecycle' },
             { text: '应用间通信', link: '/main-app/communication' },
-            { text: '样式隔离方案', link: '/main-app/style-isolation' }
+            { text: '样式隔离方案', link: '/main-app/style-isolation' },
+            { text: '样式隔离总结', link: '/main-app/style-isolation-summary' }
           ]
         }
       ],
