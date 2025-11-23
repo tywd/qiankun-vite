@@ -104,6 +104,7 @@ router.beforeEach((to: RouteLocationNormalized, from: RouteLocationNormalized, n
     }
   } else { // 激活子应用
     appTabsStore.navTabs.forEach(tab => {
+      // 检查是否以子应用的路径开头
       if (to.path.startsWith(tab.path)) {
         appTabsStore.setActiveTab(tab.id);
         return;
