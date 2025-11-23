@@ -69,7 +69,7 @@ export function startMicroAppsOnDemand() {
         prefetch: 'all', // 预加载所有微应用
         sandbox: {
           strictStyleIsolation: false,  // 关闭严格样式隔离，避免Element Plus样式问题
-          experimentalStyleIsolation: true // 启用实验性样式隔离，确保子应用样式正确应用
+          experimentalStyleIsolation: false // 关闭实验性样式隔离，防止子应用样式被清除
         },
         singular: false, // 是否为单实例场景
         fetch: (url, options) => {
