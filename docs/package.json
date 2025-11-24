@@ -14,5 +14,9 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "vercel": {
+    "buildCommand": "pnpm build",
+    "outputDirectory": ".vitepress/dist"
   }
 }

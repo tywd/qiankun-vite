@@ -91,7 +91,7 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_DOCS_PROJECT_ID }}
           vercel-args: '--prod'
         env:
-          VERCEL_PROJECT_DIR: docs/.vitepress/dist
+          VERCEL_PROJECT_DIR: docs
 
       - name: Deploy Documentation to Vercel (Production)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -102,4 +102,4 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_DOCS_PROJECT_ID }}
           vercel-args: '--prod'
         env:
-          VERCEL_PROJECT_DIR: docs/.vitepress/dist
+          VERCEL_PROJECT_DIR: docs
