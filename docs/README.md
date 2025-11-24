@@ -1,6 +1,6 @@
 # Qiankun Vite 微前端项目文档站点
 
-这是 [qiankun-vite-main](https://github.com/qiankun-vite-main) 项目的文档站点。
+这是 [qiankun-vite-main](https://github.com/tywd/qiankun-vite-main) 项目的文档站点。
 
 ## 开发
 
@@ -21,6 +21,8 @@ pnpm serve
 ## 部署
 
 文档站点通过 Vercel 自动部署。每次推送到 `main` 分支时，会自动触发生产环境部署。
+
+部署地址：https://qiankun-vite-main-docs.vercel.app/
 
 ```
 # 文档站点使用指南

@@ -28,5 +28,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "github": {
+    "autoJobCancelation": true
+  }
 }
