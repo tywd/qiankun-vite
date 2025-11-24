@@ -72,10 +72,14 @@ jobs:
           version: 8
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          cd docs
+          pnpm install
 
       - name: Build documentation
-        run: pnpm docs:build
+        run: |
+          cd docs
+          pnpm build
 
       - name: Deploy Documentation to Vercel (Preview)
         if: github.event_name == 'pull_request'

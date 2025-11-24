@@ -1,3 +1,28 @@
+# Qiankun Vite 微前端项目文档站点
+
+这是 [qiankun-vite-main](https://github.com/qiankun-vite-main) 项目的文档站点。
+
+## 开发
+
+```bash
+# 安装依赖
+pnpm install
+
+# 本地开发
+pnpm dev
+
+# 构建
+pnpm build
+
+# 预览构建结果
+pnpm serve
+```
+
+## 部署
+
+文档站点通过 Vercel 自动部署。每次推送到 `main` 分支时，会自动触发生产环境部署。
+
+```
 # 文档站点使用指南
 
 本文档站点基于 VitePress 构建，包含了关于 Qiankun 微前端项目的完整文档。
