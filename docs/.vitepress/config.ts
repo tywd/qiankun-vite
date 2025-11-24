@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/',
   title: 'Qiankun Vite 微前端项目文档',
   description: '基于 Vite 和 Qiankun 的微前端解决方案文档',
   
